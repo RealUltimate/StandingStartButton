@@ -21,4 +21,9 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("com.realultimatetrackcycling.standingstartbutton", appContext.packageName)
     }
+
+    @Test
+    fun shouldFail(){
+        fail("This failure is to ensure we are running instrumented tests.")
+    }
 }
